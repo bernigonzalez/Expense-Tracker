@@ -3,7 +3,7 @@ import { initializeApp } from "firebase/app";
 
 const config = {
 
-  apiKey: process.env.API_URL, //viene de vercel. A nivel local fijarse en archivo utils
+  apiKey: process.env.API_KEY, //viene de vercel. A nivel local fijarse en archivo utils
   authDomain: "expense-tracker-d7b6d.firebaseapp.com",
   databaseURL: "https://expense-tracker-d7b6d-default-rtdb.firebaseio.com",
   projectId: "expense-tracker-d7b6d",

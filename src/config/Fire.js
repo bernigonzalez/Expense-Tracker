@@ -1,10 +1,9 @@
 import firebase from 'firebase/compat/app';
 import { initializeApp } from "firebase/app";
-import {API_KEY, authDomain, databaseURL, projectId, storageBucket, messagingSenderId, appId, measurementId} from "./utils"
 
 const config = {
 
-  apiKey: API_KEY,
+  apiKey: process.env.API_URL, //viene de vercel. A nivel local fijarse en archivo utils
   authDomain: "expense-tracker-d7b6d.firebaseapp.com",
   databaseURL: "https://expense-tracker-d7b6d-default-rtdb.firebaseio.com",
   projectId: "expense-tracker-d7b6d",
